@@ -24,6 +24,7 @@ public class Pizza {
             this.price = 400;
         }
         this.base_pizza_price = this.price;
+
         this.bill = "";
     }
 
@@ -32,7 +33,7 @@ public class Pizza {
     }
 
     public void addExtraCheese(){
-        if(is_extra_cheese_added == false){
+        if(is_extra_cheese_added == false && is_extra_toppings_added == false){
             is_extra_cheese_added = true;
             this.price += extra_cheese_price;
         }
